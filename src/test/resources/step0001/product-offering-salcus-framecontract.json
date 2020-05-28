@@ -1,0 +1,17 @@
+{
+  "type": "SQL",
+  "connection": "salcusConnection",
+  "query": "SELECT spfwcontnumber, spname FROM sp_framework_cont WHERE spfwcontnumber IN (62004000, 65007000, 54000530, 54000250)",
+  "request": "/productOffering/FWC$spfwcontnumber",
+  "mapping": {
+    "id": "FWC$spfwcontnumber",
+    "href": "$target/productOffering/FWC$spfwcontnumber",
+    "name": "$spname",
+    "isBundle": false,
+    "productSpecification": {
+      "id": "FWC$spfwcontnumber",
+      "href": "$target/productSpecification/FWC$spfwcontnumber",
+      "name": "$spname"
+    }
+  }
+}

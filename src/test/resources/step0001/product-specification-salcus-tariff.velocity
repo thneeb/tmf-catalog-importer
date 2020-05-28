@@ -1,0 +1,39 @@
+  {
+    "id": "TARIFF$sptariffcode",
+    "name": "#if(!$fename)$spvariationname#else$fename#end",
+    "description": "$spvariationname",
+    "lastUpdate": "$vilastupdated",
+    "brand": "$brandname",
+    "isBundle": false,
+    "productNumber": "$sptariffcode",
+    "productSpecCharacteristic": [
+      {
+        "name": "Commitment",
+        "valueType": "String",
+        "minCardinality": 1,
+        "maxCardinality": 1,
+        "isUnique": true,
+        "isExtensible": false,
+        "productSpecCharacteristicValue": [
+          {
+            "value": "$vicontractperiod",
+            "valueType": "Number"
+          }
+        ]
+      },
+      {
+        "name": "TariffType",
+        "valueType": "String",
+        "minCardinality": 1,
+        "maxCardinality": 1,
+        "isUnique": true,
+        "isExtensible": false,
+        "productSpecCharacteristicValue": [
+          {
+            "value": "$spsitype",
+            "valueType": "String"
+          }
+        ]
+      }
+    ]
+  }

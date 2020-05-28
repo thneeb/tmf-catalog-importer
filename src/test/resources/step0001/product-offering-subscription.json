@@ -1,0 +1,17 @@
+{
+  "type": "SQL",
+  "connection": "salcusConnection",
+  "query": "SELECT 'mobileSubscription' AS name FROM DUAL UNION SELECT 'fixnetSubscription' AS name FROM DUAL",
+  "request": "/productOffering/$name",
+  "mapping": {
+    "id": "$name",
+    "href": "$target/productOffering/$name",
+    "name": "$name",
+    "isBundle": "false",
+    "productSpecification": {
+      "id": "$name",
+      "href": "$target/productSpecification/$name",
+      "name": "$name"
+    }
+  }
+}
